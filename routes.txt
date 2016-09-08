@@ -1,0 +1,41 @@
+                  Prefix Verb   URI Pattern                         Controller#Action
+        new_user_session GET    /users/sign_in(.:format)            devise/sessions#new
+            user_session POST   /users/sign_in(.:format)            devise/sessions#create
+    destroy_user_session DELETE /users/sign_out(.:format)           devise/sessions#destroy
+           user_password POST   /users/password(.:format)           devise/passwords#create
+       new_user_password GET    /users/password/new(.:format)       devise/passwords#new
+      edit_user_password GET    /users/password/edit(.:format)      devise/passwords#edit
+                         PATCH  /users/password(.:format)           devise/passwords#update
+                         PUT    /users/password(.:format)           devise/passwords#update
+cancel_user_registration GET    /users/cancel(.:format)             devise/registrations#cancel
+       user_registration POST   /users(.:format)                    devise/registrations#create
+   new_user_registration GET    /users/sign_up(.:format)            devise/registrations#new
+  edit_user_registration GET    /users/edit(.:format)               devise/registrations#edit
+                         PATCH  /users(.:format)                    devise/registrations#update
+                         PUT    /users(.:format)                    devise/registrations#update
+                         DELETE /users(.:format)                    devise/registrations#destroy
+              home_index GET    /home(.:format)                     home#index
+                         POST   /home(.:format)                     home#create
+                new_home GET    /home/new(.:format)                 home#new
+               edit_home GET    /home/:id/edit(.:format)            home#edit
+                    home GET    /home/:id(.:format)                 home#show
+                         PATCH  /home/:id(.:format)                 home#update
+                         PUT    /home/:id(.:format)                 home#update
+                         DELETE /home/:id(.:format)                 home#destroy
+               timelines GET    /timelines(.:format)                timelines#index
+                         POST   /timelines(.:format)                timelines#create
+            new_timeline GET    /timelines/new(.:format)            timelines#new
+           edit_timeline GET    /timelines/:id/edit(.:format)       timelines#edit
+                timeline GET    /timelines/:id(.:format)            timelines#show
+                         PATCH  /timelines/:id(.:format)            timelines#update
+                         PUT    /timelines/:id(.:format)            timelines#update
+                         DELETE /timelines/:id(.:format)            timelines#destroy
+                    root GET    /                                   devise/sessions#new
+         admin_dashbords GET    /admin/dashbords(.:format)          admin/dashbords#index
+                         POST   /admin/dashbords(.:format)          admin/dashbords#create
+      new_admin_dashbord GET    /admin/dashbords/new(.:format)      admin/dashbords#new
+     edit_admin_dashbord GET    /admin/dashbords/:id/edit(.:format) admin/dashbords#edit
+          admin_dashbord GET    /admin/dashbords/:id(.:format)      admin/dashbords#show
+                         PATCH  /admin/dashbords/:id(.:format)      admin/dashbords#update
+                         PUT    /admin/dashbords/:id(.:format)      admin/dashbords#update
+                         DELETE /admin/dashbords/:id(.:format)      admin/dashbords#destroy
